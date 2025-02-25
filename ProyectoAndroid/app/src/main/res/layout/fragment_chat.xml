@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Fragment_chat"
+    android:background="@drawable/bg_color2"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp"
+        >
+
+        <EditText
+            android:id="@+id/et_mensaje"
+            android:layout_width="0dp"
+            android:layout_height="62dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_weight="4"
+            app:layout_goneMarginBottom="8dp"
+            android:ems="10"
+            android:hint="Mensaje..."
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="66dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_mensaje"
+            app:layout_constraintStart_toEndOf="@+id/et_mensaje"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_mensaje"
+            app:layout_constraintHorizontal_weight="1"
+            android:src="@android:drawable/ic_menu_send" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_chats"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/et_mensaje"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="12dp"
+            app:layout_constraintVertical_bias="0.365" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

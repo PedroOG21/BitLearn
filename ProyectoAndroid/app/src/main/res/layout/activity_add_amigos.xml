@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddAmigosActivity">
+
+    <TextView
+        android:id="@+id/tv_agregarAmigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_amigos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <EditText
+        android:id="@+id/et_anombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/tv_nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/tv_agregarAmigo"
+        app:layout_constraintStart_toStartOf="@+id/tv_agregarAmigo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_agregarAmigo" />
+
+    <EditText
+        android:id="@+id/et_acorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/bt_correo"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/et_anombre"
+        app:layout_constraintStart_toStartOf="@+id/et_anombre"
+        app:layout_constraintTop_toBottomOf="@+id/et_anombre" />
+
+    <Button
+        android:id="@+id/bt_agregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/bt_agregar"
+        app:layout_constraintEnd_toEndOf="@+id/et_acorreo"
+        app:layout_constraintStart_toStartOf="@+id/et_acorreo"
+        app:layout_constraintTop_toBottomOf="@+id/et_acorreo" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="264dp"
+        android:layout_height="229dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/altavoz" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

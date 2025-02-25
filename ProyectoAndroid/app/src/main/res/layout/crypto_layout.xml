@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#423F3F"
+        android:padding="12dp">
+
+        <!-- Icono de la criptomoneda -->
+        <ImageView
+            android:id="@+id/iv_imagen"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- Nombre de la criptomoneda (Ej. Ethereum) -->
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_imagen"
+            app:layout_constraintStart_toEndOf="@id/iv_imagen"
+            app:layout_constraintTop_toTopOf="@+id/iv_imagen"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- Símbolo corto (Ej. ETH) -->
+        <TextView
+            android:id="@+id/tv_corto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="?android:textColorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_nombre"
+            app:layout_constraintTop_toBottomOf="@id/tv_nombre"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- Precio (Ej. $2,600) -->
+        <TextView
+            android:id="@+id/tv_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_nombre" />
+
+        <!-- Porcentaje de variación (Ej. +2.34%) -->
+        <TextView
+            android:id="@+id/tv_porcentaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_precio"
+            app:layout_constraintTop_toBottomOf="@id/tv_precio" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

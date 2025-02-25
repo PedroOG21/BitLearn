@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">ProyectoAndroid</string>
+
+    <string-array name="array_idiomas">
+        <item>Idioma</item>
+        <item>Español</item>
+        <item>Inglés</item>
+        <item>Francés</item>
+        <item>Aleman</item>
+    </string-array>
+
+    <!--STRINGS TRADUCCION -->
+
+    <!--PANEL LOGIN -->
+    <string name="bt_login">Login</string>
+    <string name="bt_registrarse">Registrarse</string>
+    <string name="bt_limpiar">Limpiar</string>
+    <string name="bt_correo">Email...</string>
+    <string name="bt_contraseña">Contraseña...</string>
+    <string name="bt_cerrar">Cerrar</string>
+    <string name="bt_salir">Salir</string>
+    <string name="label_inicio">Inicio de sesión</string>
+    <string name="bt_mostrarContrasena">Mostrar contraseña</string>
+
+    <!--PANEL LOGIN -->
+    <string name="bt_chat">Chat</string>
+    <string name="bt_enviar">Enviar</string>
+
+    <!--PANEL DETALLE CRYPTO -->
+    <string name="precioDe">Precio de  </string>
+    <string name="AcercaDe">Acerca de: </string>
+    <string name="SuministroTotal">Suministro Total: </string>
+    <string name="FechaDeEmision">Fecha de emisión: </string>
+    <string name="SuministroEnCirculacion">Suministro en circulación: </string>
+    <!--PANEL AJUSTES-->
+    <string name="Ajustes">Ajustes</string>
+    <string name="Tema">Tema</string>
+    <string name="NumeroDePasos">Número de pasos:</string>
+    <string name="Version">Versión de la aplicación: </string>
+    <!--MENU LATERAL -->
+    <string name="item_perfil">Mi perfil</string>
+    <string name="item_configuracion">Configuración</string>
+    <string name="item_salirApp">Salir</string>
+    <string name="item_info">Información de la aplicación</string>
+    <string name="item_salir">Cambiar de cuenta</string>
+    <!--PANEL INFORMACION -->
+    <string name="queEs">¿Qué son las cryptomonedas?</string>
+    <string name="ubicacion">Ubicación De Nuestros Bancos</string>
+    <string name="aprenda">Aprenda más sobre Cryptos</string>
+    <!--PANEL DATOS -->
+    <string name="tv_edad">
+        Edad: %d años
+    </string>
+    <!--PANEL AMIGOS -->
+    <string name="tv_amigos">Agregar un nuevo amigo</string>
+    <string name="tv_nombre">Nombre</string>
+    <string name="bt_agregar">Agregar</string>
+    <!--PANEL APRENDE -->
+    <string name="tv_aprende">Aprende</string>
+    <string name="tv_toca">Toca para aprender sobre cryptomonedas !</string>
+    <!--PANEL CONFIRMAR DATOS -->
+    <string name="lb_confirmar">¿CONFIRMAR LOS SIGUIENTES CAMBIOS?</string>
+    <string name="bt_confirmar">Confirmar</string>
+    <string name="bt_volver">Volver</string>
+    <!--PANEL CONFIGURACION -->
+    <string name="lb_perfil">Perfil y configuración</string>
+    <string name="lb_info">Información de la cuenta</string>
+    <string name="lb_nombre">Nombre completo: </string>
+    <string name="lb_telefono">Teléfono: </string>
+    <string name="lb_edad">Edad: </string>
+    <string name="lb_direccion">Dirección: </string>
+    <string name="bt_guardar">Guardar Cambios</string>
+    <!--PANEL GUARDAR AMIGOS -->
+    <string name="bt_actualizar">Actualizar</string>
+    <string name="bt_borrar">Borrar</string>
+
+
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
