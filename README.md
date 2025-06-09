@@ -49,7 +49,7 @@ Mientras tanto, puedes instalar la aplicación mediante el archivo **APK**.
 
 ### Instalar desde APK
 
-1. **Descarga** la última versión desde la sección [_Releases_](https://github.com/tu-org/bitlearn/releases).
+1. **Descarga** la última versión desde la sección [_Releases_](https://github.com/PedroOG21/BitLearn/tree/main/Release).
     En tu Android ve a:
          Concede permisos a **“Mis archivos”** (o al navegador desde el que descargaste).  
          Abre el archivo `BitLearn-vX.Y.Z.apk` y pulsa **Instalar**.  
