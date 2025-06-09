@@ -1,0 +1,221 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">BitLearn</string>
+
+    <!-- Language spinner -->
+    <string-array name="array_idiomas">
+        <item>Language</item>
+        <item>Spanish</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+    </string-array>
+
+    <!-- MAIN panel -->
+    <string name="bt_login">Login</string>
+    <string name="bt_registrarse">Register</string>
+    <string name="bt_limpiar">Clear</string>
+    <string name="bt_correo">Email…</string>
+    <string name="bt_contraseña">Password…</string>
+    <string name="bt_cerrar">Close</string>
+    <string name="bt_salir">Exit</string>
+    <string name="label_inicio">Sign-in</string>
+    <string name="bt_mostrarContrasena">Show password</string>
+
+    <!-- CHAT -->
+    <string name="bt_mensaje">Message…</string>
+
+    <!-- LOGIN extra buttons -->
+    <string name="bt_chat">Chat</string>
+    <string name="bt_enviar">Send</string>
+
+    <!-- CRYPTO detail -->
+    <string name="precioDe">Price of </string>
+    <string name="AcercaDe">About: </string>
+    <string name="SuministroTotal">Total supply: </string>
+    <string name="FechaDeEmision">Launch date: </string>
+    <string name="SuministroEnCirculacion">Circulating supply: </string>
+    <string name="bt_1h">1 H</string>
+    <string name="bt_1d">1 D</string>
+    <string name="bt_1s">1 W</string>
+    <string name="bt_1a">1 Y</string>
+
+    <!-- FRIENDS -->
+    <string name="lb_solicitudamigos">Friend requests</string>
+
+    <!-- SETTINGS -->
+    <string name="Ajustes">Settings</string>
+    <string name="Tema">Theme</string>
+    <string name="NumeroDePasos">Step count:</string>
+    <string name="Version">App version: </string>
+
+    <!-- Drawer -->
+    <string name="item_perfil">My profile</string>
+    <string name="item_configuracion">Settings</string>
+    <string name="item_salirApp">Exit</string>
+    <string name="item_info">App info</string>
+    <string name="item_salir">Switch account</string>
+
+    <!-- INFORMATION -->
+    <string name="queEs">What are cryptocurrencies?</string>
+    <string name="ubicacion">Our bank locations</string>
+    <string name="aprenda">Learn more about cryptos</string>
+
+    <!-- DATA screen -->
+    <string name="tv_edad">Age: %d years</string>
+    <string name="tv_correo">user@email.com</string>
+    <string name="hint_nombre">Enter your name</string>
+    <string name="hint_telefono">e.g. 600 123 123</string>
+    <string name="hint_direccion">Street, Nº, city</string>
+
+    <!-- Add friend -->
+    <string name="tv_amigos">Add a new friend</string>
+    <string name="tv_nombre">Name</string>
+    <string name="bt_agregar">Add</string>
+
+    <!-- LEARN panel -->
+    <string name="tv_aprende">Learn</string>
+    <string name="tv_toca">Tap to learn about cryptos!</string>
+
+    <!-- CONFIRM DATA -->
+    <string name="lb_confirmar">CONFIRM THE FOLLOWING CHANGES?</string>
+    <string name="bt_confirmar">Confirm</string>
+    <string name="bt_volver">Back</string>
+
+    <!-- CONFIGURATION -->
+    <string name="lb_perfil">Profile and settings</string>
+    <string name="lb_info">Account info</string>
+    <string name="lb_nombre">Full name: </string>
+    <string name="lb_telefono">Phone: </string>
+    <string name="lb_edad">Age: </string>
+    <string name="lb_direccion">Address: </string>
+    <string name="bt_guardar">Save changes</string>
+
+    <!-- FRIEND actions -->
+    <string name="bt_actualizar">Update</string>
+    <string name="bt_borrar">Delete</string>
+
+    <!-- Misc. sensors & permissions -->
+    <string name="sensor_no_disponible">Step sensor not available</string>
+    <string name="permiso_denegado">Permission denied</string>
+    <string name="permiso_actividad">Physical-activity permission</string>
+    <string name="permiso_actividad_mensaje">We need activity permission to count your steps.</string>
+    <string name="cancelar">Cancel</string>
+    <string name="aceptar">OK</string>
+    <string name="error_cargar_pasos">Error loading steps</string>
+    <string name="error_guardar_pasos">Error saving steps</string>
+    <string name="modo_oscuro">Dark mode</string>
+    <string name="modo_claro">Light mode</string>
+    <string name="espanol">Spanish</string>
+    <string name="ingles">English</string>
+    <string name="frances">French</string>
+    <string name="reiniciar_app">Restart app</string>
+    <string name="reiniciar_mensaje">To apply changes the app must close. Exit now?</string>
+    <string name="salir">Exit</string>
+    <string name="error_usuario">Error retrieving user</string>
+
+    <string name="actualizar">Update</string>
+    <string name="actualizar_amigo">Update friend</string>
+
+    <string name="error_nombre_corto">The name must have at least 3 characters</string>
+    <string name="error_email_valido">Enter a valid email</string>
+    <string name="error_usuario_no_encontrado">User not found</string>
+
+    <string name="solicitud_enviada">Request sent</string>
+    <string name="error_solicitud_enviar">Error sending request</string>
+    <string name="error_buscar_usuario">Error searching user</string>
+
+    <string name="amigo_actualizado">Friend updated</string>
+    <string name="error_actualizar_amigo">Error updating friend</string>
+
+    <!-- Friend requests button -->
+    <string name="bt_solicitudes">Requests</string>
+
+    <!-- Wallet operations -->
+    <string name="etiqueta_cantidad_monedas">Coin amount</string>
+    <string name="hint_cantidad_monedas">Enter amount</string>
+    <string name="btn_comprar">Buy</string>
+    <string name="btn_vender">Sell</string>
+
+    <string name="error_cantidad_invalida">Invalid amount</string>
+    <string name="error_fondos_insuficientes">Insufficient funds</string>
+    <string name="error_monedas_insuficientes">Not enough coins</string>
+
+    <string name="toast_compra_ok">Bought %1$.2f %2$s</string>
+    <string name="toast_compra_error">Purchase failed</string>
+    <string name="toast_venta_ok">Sold %1$.2f %2$s</string>
+    <string name="toast_venta_error">Sale failed</string>
+
+    <string name="tv_sueldo">Balance:</string>
+
+    <!-- Delete friend dialog -->
+    <string name="dialog_eliminar_amigo_titulo">Remove friend</string>
+    <string name="dialog_eliminar_amigo_mensaje">Are you sure you want to remove this friend?</string>
+    <string name="dialog_eliminar_amigo_confirmar">Remove</string>
+    <string name="dialog_eliminar_amigo_cancelar">Cancel</string>
+
+    <string name="error_autoinvitacion">You cannot add yourself as a friend</string>
+    <string name="error_solicitud_ya_enviada">You already sent a request to this user</string>
+
+    <!-- Notifications -->
+    <string name="permiso_notificaciones_titulo">Notification permission</string>
+    <string name="permiso_notificaciones_mensaje">To receive notifications, enable the permission for this app.</string>
+    <string name="permiso_notificaciones_ajustes">Open settings</string>
+    <string name="permiso_notificaciones_cancelar">Cancel</string>
+
+    <string name="notificaciones_off_titulo">Notifications disabled</string>
+    <string name="notificaciones_off_mensaje">Notifications are disabled for this app. Do you want to open settings to enable them?</string>
+    <string name="notificaciones_off_ajustes">Open settings</string>
+    <string name="notificaciones_off_cancelar">Later</string>
+
+    <!-- Legal notice -->
+    <string name="tv_avisolegal">Legal notice</string>
+    <string name="aviso_legal_titulo">Legal notice</string>
+    <string name="aviso_legal_texto">
+BitLearn is an educational app designed to provide information and tools for learning about cryptocurrencies and habit tracking. You use this application at your own risk.
+
+The content, data and recommendations shown in BitLearn are provided for information purposes only and do not constitute financial, medical, legal or professional advice. You must verify all information before making decisions based on it. The developers and collaborators of BitLearn are not responsible for any loss, damage or harm that may result from the use of the app or reliance on its content.
+
+To operate correctly, BitLearn collects basic personal data (name, email, daily steps, activity history, etc.) as well as metrics about app usage. All data are processed according to our privacy policy, available in the “Privacy Policy” section of the settings screen. You guarantee that any information you provide is truthful and that you will not include sensitive data of third parties without their explicit consent.
+
+BitLearn may contain links to third-party websites or display price notifications from external services. We are not responsible for the content or privacy practices of those sites. If you stop receiving notifications, please check your device permissions and notification settings.
+
+We reserve the right to modify, suspend or discontinue any BitLearn feature at any time without prior notice. We may also update this Legal Notice in the future; please review it periodically to remain informed of changes.
+
+For any questions, suggestions or claims regarding BitLearn, contact us at: portizgalera@gmail.com. Thank you for using BitLearn.
+    </string>
+
+    <!-- Fragment_chat toasts -->
+    <string name="toast_mensaje_eliminado">Message deleted</string>
+    <string name="toast_error_eliminar_mensaje">Error deleting message</string>
+    <string name="toast_error_base_datos">Database error</string>
+    <string name="toast_error_recuperar_chats">Error retrieving chats</string>
+    <string name="toast_error_recuperar_chats_detalle">Error retrieving chats: %1$s</string>
+    <string name="toast_error_guardar_mensaje">Unable to save message</string>
+
+    <!-- DataActivity toasts -->
+    <string name="toast_no_usuario_logeado">No user logged in</string>
+    <string name="error_nombre_vacio">Name cannot be empty</string>
+    <string name="error_telefono_vacio">Phone cannot be empty</string>
+    <string name="error_direccion_vacia">Address cannot be empty</string>
+    <string name="toast_perfil_guardado">Profile saved</string>
+    <string name="toast_error_guardar_perfil">Error saving profile</string>
+
+    <!-- InformacionActivity -->
+    <string name="toast_permiso_denegado_ubicacion">Location permission denied</string>
+    <string name="dialog_permiso_ubicacion_titulo">Location permission</string>
+    <string name="dialog_permiso_ubicacion_mensaje">To use this app properly you must grant the location permission.</string>
+    <string name="marcador_banco">Bank</string>
+
+    <!-- MainActivity toasts -->
+    <string name="toast_error_autenticar_google">Error authenticating with Google</string>
+    <string name="toast_fallo_autenticacion_google">Authentication failed: %1$s</string>
+    <string name="toast_google_cancelado">User cancelled</string>
+    <string name="toast_error_generico">Error: %1$s</string>
+    <string name="error_email_invalido">A valid email is required</string>
+    <string name="error_contrasena_corta">Password must be at least 6 characters</string>
+
+    <!-- Placeholder -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="de">of</string>
+</resources>

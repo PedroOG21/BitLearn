@@ -61,6 +61,9 @@ dependencies {
     //liveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
 
+    implementation ("com.google.firebase:firebase-messaging:23.1.2")
+
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

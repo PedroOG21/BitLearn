@@ -7,6 +7,47 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="64dp"
+        android:layout_weight="1"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wv_grafica" />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#66BB6A"
+        android:text="@string/btn_comprar"
+        app:layout_constraintBottom_toBottomOf="@+id/etAmount"
+        app:layout_constraintEnd_toStartOf="@+id/etAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etAmount" />
+
+    <Button
+        android:id="@+id/btnSell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#EF5350"
+        android:text="@string/btn_vender"
+        app:layout_constraintBottom_toBottomOf="@+id/etAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etAmount"
+        app:layout_constraintTop_toTopOf="@+id/etAmount"
+        app:layout_constraintVertical_bias="0.785" />
+
     <ImageView
         android:id="@+id/bt_exit"
         android:layout_width="35dp"
@@ -25,11 +66,10 @@
         android:id="@+id/tv_image"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="@+id/bt_exit"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/bt_exit"
-        app:layout_constraintTop_toBottomOf="@+id/bt_exit"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_exit"
+        app:layout_constraintStart_toEndOf="@+id/bt_exit"
+        app:layout_constraintTop_toTopOf="@+id/bt_exit"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -54,19 +94,21 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintVertical_bias="0.137" />
 
     <TextView
         android:id="@+id/tv_nombreL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
         android:text="TextView"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView12"
         app:layout_constraintTop_toTopOf="@+id/textView12"
         app:layout_constraintVertical_bias="0.0" />
@@ -91,10 +133,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219" />
+        app:layout_constraintVertical_bias="0.09" />
 
     <TextView
         android:id="@+id/tv_porcentage"
@@ -109,53 +151,38 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_precioo"
         app:layout_constraintVertical_bias="0.029" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="403dp"
-        android:layout_height="157dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:cropToPadding="false"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_porcentage"
-        app:layout_constraintVertical_bias="0.099"
-        app:srcCompat="@drawable/estadistica" />
 
     <TextView
         android:id="@+id/tv_descripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginBottom="120dp"
         android:text="@string/AcercaDe"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tv_image"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintStart_toStartOf="@+id/btnBuy" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
         android:text="@string/SuministroTotal"
-        app:layout_constraintStart_toStartOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
     <TextView
         android:id="@+id/tv_suministroTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
         android:text="TextView"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView15"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnSell"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView15"
         app:layout_constraintTop_toTopOf="@+id/textView15"
@@ -165,20 +192,21 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
         android:text="@string/FechaDeEmision"
-        app:layout_constraintStart_toStartOf="@+id/tv_descripcion"
-        app:layout_constraintTop_toBottomOf="@+id/tv_descripcion" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
 
     <TextView
         android:id="@+id/tv_fechaEmision"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
         android:text="TextView"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView17"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnSell"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView17"
         app:layout_constraintTop_toTopOf="@+id/textView17"
@@ -188,23 +216,120 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
         android:text="@string/SuministroEnCirculacion"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView12" />
 
     <TextView
         android:id="@+id/tv_suministracionCirculacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
         android:text="TextView"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView19"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnSell"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView19"
         app:layout_constraintTop_toTopOf="@+id/textView19"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bt_1h"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/bt_1h"
+        app:layout_constraintEnd_toStartOf="@+id/bt_1d"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="@id/wv_grafica"
+        app:layout_constraintTop_toBottomOf="@id/wv_grafica" />
+
+    <Button
+        android:id="@+id/bt_1d"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_1d"
+        app:layout_constraintEnd_toStartOf="@+id/bt_1s"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/bt_1h"
+        app:layout_constraintTop_toTopOf="@id/bt_1h" />
+
+    <Button
+        android:id="@+id/bt_1s"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_1s"
+        app:layout_constraintEnd_toStartOf="@+id/bt_1a"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/bt_1d"
+        app:layout_constraintTop_toTopOf="@id/bt_1h" />
+
+    <Button
+        android:id="@+id/bt_1a"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_1a"
+        app:layout_constraintEnd_toEndOf="@id/wv_grafica"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/bt_1s"
+        app:layout_constraintTop_toTopOf="@id/bt_1h" />
+
+    <!-- Details Section -->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="textView15,tv_suministroTotal,textView17,tv_fechaEmision,textView19,tv_suministracionCirculacion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_1h" />
+
+    <WebView
+        android:id="@+id/wv_grafica"
+        android:layout_width="367dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:barrierMargin="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_porcentage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descripcion"
+        app:srcCompat="@drawable/baseline_calendar_today_24" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/baseline_all_inbox_24" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/baseline_incomplete_circle_24" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

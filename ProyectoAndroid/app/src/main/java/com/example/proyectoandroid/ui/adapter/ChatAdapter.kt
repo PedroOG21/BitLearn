@@ -13,7 +13,7 @@ class ChatAdapter(
     private val eliminarMensaje: (ChatModel) -> Unit
 ) : RecyclerView.Adapter<ChatViewHolder>() {
 
-    fun updateAdapter(listaNueva: MutableList<ChatModel>) {
+    fun actualizarAdapter(listaNueva: MutableList<ChatModel>) {
         lista = listaNueva
         notifyDataSetChanged()
     }

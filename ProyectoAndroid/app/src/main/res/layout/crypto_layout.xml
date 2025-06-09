@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="10dp"
     app:cardElevation="6dp"
-    app:cardUseCompatPadding="true"
-    >
+    app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -32,6 +31,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLength="12"
+            android:singleLine="true"
             android:textColor="?android:textColorPrimary"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -45,26 +47,24 @@
             android:id="@+id/tv_corto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:textColor="?android:textColorSecondary"
+            android:textColor="?android:textColorPrimary"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@id/tv_nombre"
             app:layout_constraintTop_toBottomOf="@id/tv_nombre"
             app:layout_constraintVertical_bias="0.0" />
 
-        <!-- Precio (Ej. $2,600) -->
+
         <TextView
             android:id="@+id/tv_precio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="98dp"
             android:textColor="?android:textColorPrimary"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/tv_nombre" />
 
-        <!-- Porcentaje de variación (Ej. +2.34%) -->
         <TextView
             android:id="@+id/tv_porcentaje"
             android:layout_width="wrap_content"
@@ -74,6 +74,20 @@
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@id/tv_precio"
             app:layout_constraintTop_toBottomOf="@id/tv_precio" />
+
+        <ImageView
+            android:id="@+id/iv_grafica1"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_porcentaje"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

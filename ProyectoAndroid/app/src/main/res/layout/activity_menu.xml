@@ -29,8 +29,8 @@
 
         <ImageView
             android:id="@+id/bt_chat"
-            android:layout_width="70dp"
-            android:layout_height="50dp"
+            android:layout_width="115dp"
+            android:layout_height="34dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,21 +38,22 @@
 
         <ImageView
             android:id="@+id/bt_crypto"
-            android:layout_width="70dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="36dp"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
             app:layout_constraintBottom_toBottomOf="@+id/bt_chat"
+            app:layout_constraintEnd_toStartOf="@+id/bt_chat"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fg_contenedor"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/baseline_euro_24" />
 
         <ImageView
             android:id="@+id/bt_ranking"
-            android:layout_width="70dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="36dp"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
             app:layout_constraintBottom_toBottomOf="@+id/bt_chat"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_chat"
             app:layout_constraintTop_toBottomOf="@+id/fg_contenedor"
             app:srcCompat="@drawable/baseline_workspace_premium_24" />
 

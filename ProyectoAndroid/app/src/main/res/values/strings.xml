@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ProyectoAndroid</string>
+    <string name="app_name">BitLearn</string>
 
     <string-array name="array_idiomas">
         <item>Idioma</item>
@@ -9,9 +9,8 @@
         <item>Aleman</item>
     </string-array>
 
-    <!--STRINGS TRADUCCION -->
 
-    <!--PANEL LOGIN -->
+    <!--PANEL MAIN -->
     <string name="bt_login">Login</string>
     <string name="bt_registrarse">Registrarse</string>
     <string name="bt_limpiar">Limpiar</string>
@@ -21,6 +20,9 @@
     <string name="bt_salir">Salir</string>
     <string name="label_inicio">Inicio de sesión</string>
     <string name="bt_mostrarContrasena">Mostrar contraseña</string>
+
+    <!--PANEL CHAT -->
+    <string name="bt_mensaje">Mensaje...</string>
 
     <!--PANEL LOGIN -->
     <string name="bt_chat">Chat</string>
@@ -32,6 +34,14 @@
     <string name="SuministroTotal">Suministro Total: </string>
     <string name="FechaDeEmision">Fecha de emisión: </string>
     <string name="SuministroEnCirculacion">Suministro en circulación: </string>
+    <string name="bt_1h">1H</string>
+    <string name="bt_1d">1D</string>
+    <string name="bt_1s">1S</string>
+    <string name="bt_1a">1A</string>
+
+    <!--PANEL AMIGOS -->
+    <string name="lb_solicitudamigos">Solicitudes de Amistad</string>"
+
     <!--PANEL AJUSTES-->
     <string name="Ajustes">Ajustes</string>
     <string name="Tema">Tema</string>
@@ -51,6 +61,14 @@
     <string name="tv_edad">
         Edad: %d años
     </string>
+    <string name="tv_correo">usuario@email.com</string>
+
+    <string name="hint_nombre">Introduce tu nombre</string>
+
+    <string name="hint_telefono">Ej. 600123123</string>
+
+    <string name="hint_direccion">Calle, nº, ciudad</string>
+
     <!--PANEL AMIGOS -->
     <string name="tv_amigos">Agregar un nuevo amigo</string>
     <string name="tv_nombre">Nombre</string>
@@ -74,12 +92,131 @@
     <string name="bt_actualizar">Actualizar</string>
     <string name="bt_borrar">Borrar</string>
 
+    <string name="sensor_no_disponible">Sensor de pasos no disponible</string>
+    <string name="permiso_denegado">Permiso denegado</string>
+    <string name="permiso_actividad">Permiso Actividad Física</string>
+    <string name="permiso_actividad_mensaje">Necesitamos permiso de actividad física para contar tus pasos.</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="error_cargar_pasos">Error al cargar pasos</string>
+    <string name="error_guardar_pasos">Error al guardar pasos</string>
+    <string name="modo_oscuro">Modo oscuro</string>
+    <string name="modo_claro">Modo claro</string>
+    <string name="espanol">Español</string>
+    <string name="ingles">Inglés</string>
+    <string name="frances">Francés</string>
+    <string name="reiniciar_app">Reiniciar aplicación</string>
+    <string name="reiniciar_mensaje">Para aplicar los cambios, la aplicación debe cerrarse. ¿Deseas salir ahora?</string>
+    <string name="salir">Salir</string>
+    <string name="error_usuario">Error al obtener el usuario</string>
 
 
+    <string name="actualizar">Actualizar</string>
+    <string name="actualizar_amigo">Actualizar Amigo</string>
 
+    <string name="error_nombre_corto">El nombre debe tener al menos 3 caracteres</string>
+    <string name="error_email_valido">Introduce un email válido</string>
+    <string name="error_usuario_no_encontrado">Usuario no encontrado</string>
+
+    <string name="solicitud_enviada">Solicitud enviada</string>
+    <string name="error_solicitud_enviar">Error enviando solicitud</string>
+    <string name="error_buscar_usuario">Error al buscar usuario</string>
+
+    <string name="amigo_actualizado">Amigo actualizado</string>
+    <string name="error_actualizar_amigo">Error al actualizar amigo</string>
+
+    <string name="bt_solicitudes">Solicitudes</string>
+    <string name="etiqueta_cantidad_monedas">Cantidad de monedas</string>
+    <string name="hint_cantidad_monedas">Introduce cantidad</string>
+    <string name="btn_comprar">Comprar</string>
+    <string name="btn_vender">Vender</string>
+
+    <string name="error_cantidad_invalida">Cantidad inválida</string>
+    <string name="error_fondos_insuficientes">Fondos insuficientes</string>
+    <string name="error_monedas_insuficientes">No tienes suficientes monedas</string>
+
+    <string name="toast_compra_ok">Comprado %1$.2f %2$s</string>
+    <string name="toast_compra_error">Error al comprar</string>
+
+    <string name="toast_venta_ok">Vendido %1$.2f %2$s</string>
+    <string name="toast_venta_error">Error al vender</string>
+    <string name="tv_sueldo">Sueldo:</string>
+
+    <string name="dialog_eliminar_amigo_titulo">Eliminar amigo</string>
+    <string name="dialog_eliminar_amigo_mensaje">¿Estás seguro de que deseas eliminar a este amigo?</string>
+    <string name="dialog_eliminar_amigo_confirmar">Eliminar</string>
+    <string name="dialog_eliminar_amigo_cancelar">Cancelar</string>
+
+    <string name="error_autoinvitacion">No puedes agregarte a ti mismo como amigo</string>
+
+    <string name="error_solicitud_ya_enviada">Ya has enviado una solicitud a este usuario</string>
+
+    <string name="permiso_notificaciones_titulo">Permiso de notificaciones</string>
+    <string name="permiso_notificaciones_mensaje">Para recibir notificaciones, activa el permiso de notificaciones en la aplicación.</string>
+    <string name="permiso_notificaciones_ajustes">Abrir ajustes</string>
+    <string name="permiso_notificaciones_cancelar">Cancelar</string>
+
+    <string name="notificaciones_off_titulo">Notificaciones deshabilitadas</string>
+    <string name="notificaciones_off_mensaje">Tienes las notificaciones desactivadas para esta app. ¿Quieres abrir ajustes para habilitarlas?</string>
+    <string name="notificaciones_off_ajustes">Ir a ajustes</string>
+    <string name="notificaciones_off_cancelar">Más tarde</string>
+
+    <string name="tv_avisolegal">Aviso Legal</string>
+
+    <!-- En res/values/strings.xml -->
+    <!-- En res/values/strings.xml -->
+    <string name="aviso_legal_titulo">Aviso Legal</string>
+    <string name="aviso_legal_texto">
+    BitLearn es una aplicación educativa destinada a proporcionar información y herramientas para el aprendizaje de criptomonedas y gestión de hábitos. El uso de esta aplicación se realiza bajo su propia responsabilidad.
+
+    El contenido, datos y recomendaciones que se muestran en BitLearn se ofrecen únicamente con fines informativos y no constituyen en ningún caso asesoramiento financiero, médico, legal o profesional. El usuario debe contrastar toda la información antes de tomar decisiones basadas en ella. Ni los desarrolladores ni los colaboradores de BitLearn se hacen responsables de las posibles pérdidas, daños o perjuicios que pudieran derivarse del uso de la aplicación o de la confianza depositada en su contenido.
+
+    Para el correcto funcionamiento de BitLearn, se recogen datos personales básicos (nombre, correo electrónico, pasos diarios, histórico de actividad, etc.), así como métricas relacionadas con el uso de la aplicación. Todos estos datos se tratan conforme a nuestra política de privacidad, disponible en la sección “Política de Privacidad” de la configuración de la aplicación. Usted garantiza que la información que proporcione sea veraz y no incluirá datos sensibles de terceras personas sin su consentimiento expreso.
+
+    BitLearn puede contener enlaces a sitios web de terceros o mostrar notificaciones con datos de precios de criptomonedas. No asumimos responsabilidad por el contenido ni las prácticas de privacidad de dichos sitios externos. Asimismo, las notificaciones dependen de servicios externos; si en algún momento deja de recibirlas, consulte la configuración de permisos y notificaciones de su dispositivo.
+
+    Nos reservamos el derecho de modificar, suspender o descontinuar cualquier funcionalidad de BitLearn en cualquier momento y sin previo aviso. De igual forma, nos reservamos la posibilidad de actualizar este Aviso Legal en el futuro. Le recomendamos revisar esta sección periódicamente para estar al tanto de posibles cambios.
+
+    Para cualquier duda, sugerencia o reclamación respecto a BitLearn, puede ponerse en contacto con nosotros a través del correo electrónico: portizgalera@gmail.com. Gracias por utilizar BitLearn y confiar en nosotros para su aprendizaje.
+    </string>
+
+    <!-- Fragment_chat – mensajes Toast -->
+    <string name="toast_mensaje_eliminado">Mensaje eliminado</string>
+    <string name="toast_error_eliminar_mensaje">Error al eliminar el mensaje</string>
+    <string name="toast_error_base_datos">Error de base de datos</string>
+    <string name="toast_error_recuperar_chats">Error al recuperar los chats</string>
+    <string name="toast_error_recuperar_chats_detalle">Error al recuperar los chats: %1$s</string>
+    <string name="toast_error_guardar_mensaje">No se pudo guardar el mensaje</string>
+
+    <string name="toast_no_usuario_logeado">No hay usuario logueado.</string>
+
+    <string name="error_nombre_vacio">El nombre no puede estar vacío</string>
+    <string name="error_telefono_vacio">El teléfono no puede estar vacío</string>
+    <string name="error_direccion_vacia">La dirección no puede estar vacía</string>
+
+    <string name="toast_perfil_guardado">Perfil guardado</string>
+    <string name="toast_error_guardar_perfil">Error guardando perfil</string>
+
+    <!-- InformacionActivity -->
+    <string name="toast_permiso_denegado_ubicacion">El usuario denegó el permiso de ubicación</string>
+
+    <string name="dialog_permiso_ubicacion_titulo">Permisos de ubicación</string>
+    <string name="dialog_permiso_ubicacion_mensaje">Para utilizar correctamente esta aplicación es necesario aceptar el permiso de ubicación.</string>
+
+    <string name="marcador_banco">Banco</string>
+
+    <!-- MainActivity – mensajes y errores -->
+    <string name="toast_error_autenticar_google">Error al autenticar con Google</string>
+    <string name="toast_fallo_autenticacion_google">Fallo en la autenticación: %1$s</string>
+    <string name="toast_google_cancelado">El usuario ha cancelado</string>
+    <string name="toast_error_generico">Error: %1$s</string>
+
+    <string name="error_email_invalido">Se esperaba un correo correcto</string>
+    <string name="error_contrasena_corta">La contraseña debe tener al menos 6 caracteres</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="de">de</string>
 
 </resources>

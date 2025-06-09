@@ -26,18 +26,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/svBuscadorNombre"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/svBuscadorNombre" />
 
         <ImageView
             android:id="@+id/bt_aprende"
             android:layout_width="53dp"
             android:layout_height="0dp"
-            android:src="@drawable/baseline_lightbulb_24"
+            android:src="@drawable/baseline_shopping_bag_24"
             app:layout_constraintBottom_toTopOf="@+id/recycler"
             app:layout_constraintEnd_toStartOf="@+id/bt_amigos"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/bt_amigos"
@@ -46,8 +44,8 @@
             android:src="@drawable/baseline_people_24"
             app:layout_constraintBottom_toTopOf="@+id/recycler"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

@@ -4,4 +4,13 @@
     <color name="color_normal">#2E2B2B</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Color de texto normal -->
+    <color name="textPrimary">#212121</color>
+    <!-- Color de fondo normal -->
+    <color name="cardBackground">#FFFFFF</color>
+    <!-- Color “resaltado” para el usuario actual -->
+    <color name="colorAccent">#FF5722</color>
+    <!-- Color de fondo claro para filas resaltadas -->
+    <color name="lightAccentBg">#FFF3E0</color>
+
 </resources>

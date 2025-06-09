@@ -1,89 +1,46 @@
 package com.example.proyectoandroid.data.database
 
-import android.content.ContentValues
-import android.database.sqlite.SQLiteDatabase
 import com.example.proyectoandroid.data.AmigosModel
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.*
+import com.google.firebase.ktx.Firebase
+import com.google.android.gms.tasks.Task
 
 class CrudAmigos {
 
-    fun create(c: AmigosModel): Long {
-        val con = Aplication.llave.writableDatabase //abrimos la bbdd en modo escritura
-        return try {
-            con.insertWithOnConflict(
-                Aplication.TABLA,
-                null,
-                c.toContentValues(),
-                SQLiteDatabase.CONFLICT_IGNORE
-            )
-        } catch (ex: Exception) {
-            ex.printStackTrace()
-            -1L
-        } finally {
-            con.close()
+    private val auth = Firebase.auth
+    private val uid = auth.currentUser?.uid
+        ?: throw IllegalStateException("Usuario no autenticado")
+    private val dbRef = FirebaseDatabase.getInstance().reference
+        .child("usuarios").child(uid).child("amigos")
 
-        }
+
+    fun create(c: AmigosModel): Task<Void> {
+        c.fechaAmistad = System.currentTimeMillis()
+        return dbRef.child(c.id).setValue(c)
     }
 
-    fun read(): MutableList<AmigosModel> {
-        val lista = mutableListOf<AmigosModel>()
-        val con = Aplication.llave.readableDatabase
-        try {
-            val cursor = con.query(
-                Aplication.TABLA,
-                arrayOf("id", "nombre", "email", "imagen"),
-                null,
-                null,
-                null,
-                null,
-                null
-            )
-            while (cursor.moveToNext()) {
-                val contacto = AmigosModel(
-                    cursor.getInt(0),
-                    cursor.getString(1),
-                    cursor.getString(2),
-                    cursor.getString(3),
-                )
-                lista.add(contacto)
+    fun read(callback: (MutableList<AmigosModel>) -> Unit) {
+        dbRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val lista = mutableListOf<AmigosModel>()
+                snapshot.children.forEach { child ->
+                    child.getValue(AmigosModel::class.java)?.let { modelo ->
+                        lista.add(modelo)
+                    }
+                }
+                callback(lista)
             }
-            cursor.close()
-        } catch (ex: Exception) {
-            ex.printStackTrace()
-        } finally {
-            con.close()
-        }
-        return lista
+
+            override fun onCancelled(error: DatabaseError) {}
+        })
     }
 
-    public fun borrar(id: Int): Boolean {
-        val con = Aplication.llave.writableDatabase
-        val amigoBorrado = con.delete(Aplication.TABLA, "id=?", arrayOf(id.toString()))
-        con.close()
-        return amigoBorrado > 0
+    fun actualizar(c: AmigosModel): Task<Void> {
+        return dbRef.child(c.id).child("nombre").setValue(c.nombre)
     }
 
-    public fun update(c: AmigosModel): Boolean {
-        val con = Aplication.llave.writableDatabase
-        val values = c.toContentValues()
-        var filasAfectadas = 0
-        val q = "select id from ${Aplication.TABLA} where email=? AND id <> ?"
-        val cursor = con.rawQuery(q, arrayOf(c.email, c.id.toString()))
-        val existeEmail = cursor.moveToFirst()
-        cursor.close()
-        if (!existeEmail) {
-            filasAfectadas = con.update(Aplication.TABLA, values, "id=?", arrayOf(c.id.toString()))
-        }
-        con.close()
-        return filasAfectadas > 0
+    fun borrar(id: String): Task<Void> {
+        return dbRef.child(id).removeValue()
     }
-
-
-    private fun AmigosModel.toContentValues(): ContentValues {
-        return ContentValues().apply {
-            put("nombre", nombre)
-            put("email", email)
-            put("imagen", imagen)
-        }
-    }
-
 }

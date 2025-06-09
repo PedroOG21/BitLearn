@@ -1,5 +1,6 @@
 package com.example.proyectoandroid.ui
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -9,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.proyectoandroid.R
 import com.example.proyectoandroid.databinding.ActivityConfirmarDatosBinding
 import com.example.proyectoandroid.ui.prefenrences.Preferences
+import com.example.proyectoandroid.utils.LocaleHelper
 
 class ConfirmarDatosActivity : AppCompatActivity() {
 
@@ -18,6 +20,13 @@ class ConfirmarDatosActivity : AppCompatActivity() {
     private var telefono = ""
     private var direccion = ""
     private var edad = 18
+
+    override fun attachBaseContext(newBase: Context) {
+        val prefs = Preferences(newBase)
+        val idioma = prefs.getIdioma()
+        val context = LocaleHelper.wrap(newBase, idioma)
+        super.attachBaseContext(context)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,6 +52,7 @@ class ConfirmarDatosActivity : AppCompatActivity() {
         direccion = datos?.getString("direccion").toString()
         edad = datos?.getInt("edad")!!
     }
+
     private fun rellenarDatos() {
         binding.tvCnombre.text = nombre
         binding.tvCtelefono.text = telefono
@@ -57,7 +67,13 @@ class ConfirmarDatosActivity : AppCompatActivity() {
         binding.btConfirmar.setOnClickListener {
             // Guardardamos los datos
             val preferences = Preferences(this)
-            preferences.saveUserData(nombre, telefono, direccion, edad, intent.getStringExtra("emailUsuarioLogeado").toString())
+            preferences.saveUserData(
+                nombre,
+                telefono,
+                direccion,
+                edad,
+                intent.getStringExtra("emailUsuarioLogeado").toString()
+            )
 
             val resultIntent = Intent().apply {
                 putExtra("nombre", nombre)

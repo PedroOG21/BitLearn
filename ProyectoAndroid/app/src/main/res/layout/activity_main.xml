@@ -29,8 +29,9 @@
         android:id="@+id/bt_google"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="188dp"
         app:layout_constraintEnd_toEndOf="@+id/et_contrasena"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_contrasena"
         app:layout_constraintTop_toBottomOf="@+id/et_contrasena" />
 
@@ -55,35 +56,29 @@
         android:id="@+id/bt_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:backgroundTint="#50C878"
         android:text="@string/bt_login"
         app:layout_constraintBottom_toBottomOf="@+id/bt_registrarse"
         app:layout_constraintEnd_toStartOf="@+id/bt_registrarse"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/bt_registrarse" />
+        app:layout_constraintTop_toTopOf="@+id/bt_registrarse"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/bt_registrarse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
         android:backgroundTint="#32CD32"
         android:text="@string/bt_registrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_contrasena"
-        app:layout_constraintVertical_bias="0.639" />
-
-    <Button
-        android:id="@+id/bt_limpiar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#27AE60"
-        android:text="@string/bt_limpiar"
-        app:layout_constraintBottom_toBottomOf="@+id/bt_registrarse"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_registrarse"
-        app:layout_constraintTop_toTopOf="@+id/bt_registrarse" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_mostrar"
+        app:layout_constraintVertical_bias="0.112" />
 
     <CheckBox
         android:id="@+id/cb_mostrar"
@@ -103,7 +98,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.058"
         app:srcCompat="@drawable/logo" />
 
 

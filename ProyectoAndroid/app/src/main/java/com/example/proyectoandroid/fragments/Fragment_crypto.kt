@@ -14,12 +14,13 @@ import com.example.proyectoandroid.data.net.ApiInterfaz
 import com.example.proyectoandroid.data.net.CryptoObject
 import com.example.proyectoandroid.databinding.FragmentCryptoBinding
 import com.example.proyectoandroid.ui.AmigosActivity
-import com.example.proyectoandroid.ui.AprendeActivity
 import com.example.proyectoandroid.ui.DetalleCryptoActivity
+import com.example.proyectoandroid.ui.MisCriptosActivity
 import com.example.proyectoandroid.ui.adapter.TopMarketAdapter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+
 
 class Fragment_crypto : Fragment() {
 
@@ -39,8 +40,8 @@ class Fragment_crypto : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setListeners()
-        getTopCurrencyList()
-        setupSearchView()
+        obtenerListaMonedas()
+        configurarBuscador()
 
     }
 
@@ -56,7 +57,7 @@ class Fragment_crypto : Fragment() {
         binding.recycler.adapter = adapter
 
         binding.btAprende.setOnClickListener {
-            val intent = Intent(requireContext(), AprendeActivity::class.java)
+            val intent = Intent(requireContext(), MisCriptosActivity::class.java)
             startActivity(intent)
         }
         binding.btAmigos.setOnClickListener {
@@ -65,7 +66,7 @@ class Fragment_crypto : Fragment() {
         }
     }
 
-    private fun getTopCurrencyList() {
+    private fun obtenerListaMonedas() {
         lifecycleScope.launch(Dispatchers.IO) {
             // llamada a la api
             val res = CryptoObject.getInstance()
@@ -82,7 +83,7 @@ class Fragment_crypto : Fragment() {
         }
     }
 
-    private fun setupSearchView() {
+    private fun configurarBuscador() {
         binding.svBuscadorNombre.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 filtrarLista(query)
