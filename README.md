@@ -58,6 +58,9 @@ Mientras tanto, puedes instalar la aplicación mediante el archivo **APK**.
 > ⚠️ **Nota**: algunos fabricantes cambian ligeramente la ruta de ajustes.  
 > Si no localizas la opción, busca “instalar apps desconocidas” en el campo de búsqueda de Ajustes.
 
+## Manual de usuario
+Este es el enlace hacia el manual de usuarios/administradores de la aplicación [_Manual_](https://drive.google.com/file/d/1tLE-_GvxVNV04aX1Qx4UmBL6l_hDw86d/view?usp=drive_link)
+
 ## Primeros pasos
 
 1. **Crea tu perfil** o inicia sesión con Google.  
