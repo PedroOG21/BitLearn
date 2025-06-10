@@ -13,9 +13,10 @@
 4. [Instalación](#instalación)
    - [Google Play (próximamente)](#google-play-próximamente)
    - [Instalar desde APK](#instalar-desde-apk)
-5. [Primeros pasos](#primeros-pasos)
-6. [Licencia](#licencia)
-7. [Contacto y soporte](#contacto-y-soporte)
+5. [Manual de usuarios](#manual-de-usuarios)
+6. [Primeros pasos](#primeros-pasos)
+7. [Licencia](#licencia)
+8. [Contacto y soporte](#contacto-y-soporte)
 
 ---
 
@@ -49,14 +50,17 @@ Mientras tanto, puedes instalar la aplicación mediante el archivo **APK**.
 
 ### Instalar desde APK
 
-1. **Descarga** la última versión desde la sección [_Releases_](https://github.com/tu-org/bitlearn/releases).
+1. **Descarga** la última versión desde la sección [_Releases_](https://github.com/PedroOG21/BitLearn/tree/main/Release).
     En tu Android ve a:
          Concede permisos a **“Mis archivos”** (o al navegador desde el que descargaste).  
-         Abre el archivo `BitLearn-vX.Y.Z.apk` y pulsa **Instalar**.  
+         Abre el archivo y pulsa **Instalar**.  
          ¡Listo! Ya puedes iniciar BitLearn desde tu cajón de apps.
 
 > ⚠️ **Nota**: algunos fabricantes cambian ligeramente la ruta de ajustes.  
 > Si no localizas la opción, busca “instalar apps desconocidas” en el campo de búsqueda de Ajustes.
+
+## Manual de usuarios
+Este es el enlace hacia el manual de usuarios/administradores de la aplicación [_Manual_](https://drive.google.com/file/d/1tLE-_GvxVNV04aX1Qx4UmBL6l_hDw86d/view?usp=drive_link)
 
 ## Primeros pasos
 
