@@ -6,7 +6,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
     android:padding="16dp"
     tools:context=".ui.ConfirmarDatosActivity">
 
@@ -43,7 +42,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Nombre -->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -81,7 +79,6 @@
                 android:layout_height="1dp"
                 android:background="#E0E0E0" />
 
-            <!-- Teléfono -->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -119,7 +116,6 @@
                 android:layout_height="1dp"
                 android:background="#E0E0E0" />
 
-            <!-- Edad -->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -157,7 +153,6 @@
                 android:layout_height="1dp"
                 android:background="#E0E0E0" />
 
-            <!-- Dirección -->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

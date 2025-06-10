@@ -43,7 +43,6 @@ class MenuActivity : AppCompatActivity() {
 
     private lateinit var solicitudesRef: DatabaseReference
 
-
     private var cargarIniciales = false
 
     override fun attachBaseContext(newBase: Context) {
