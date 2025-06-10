@@ -14,8 +14,9 @@
    - [Google Play (próximamente)](#google-play-próximamente)
    - [Instalar desde APK](#instalar-desde-apk)
 5. [Primeros pasos](#primeros-pasos)
-6. [Licencia](#licencia)
-7. [Contacto y soporte](#contacto-y-soporte)
+6. [Manual de usuario](#manual-de-usuario)
+7. [Licencia](#licencia)
+8. [Contacto y soporte](#contacto-y-soporte)
 
 ---
 
@@ -58,7 +59,7 @@ Mientras tanto, puedes instalar la aplicación mediante el archivo **APK**.
 > ⚠️ **Nota**: algunos fabricantes cambian ligeramente la ruta de ajustes.  
 > Si no localizas la opción, busca “instalar apps desconocidas” en el campo de búsqueda de Ajustes.
 
-## Manual de usuario
+## Manual de usuarios
 Este es el enlace hacia el manual de usuarios/administradores de la aplicación [_Manual_](https://drive.google.com/file/d/1tLE-_GvxVNV04aX1Qx4UmBL6l_hDw86d/view?usp=drive_link)
 
 ## Primeros pasos
