@@ -13,8 +13,8 @@
 4. [Instalación](#instalación)
    - [Google Play (próximamente)](#google-play-próximamente)
    - [Instalar desde APK](#instalar-desde-apk)
-5. [Primeros pasos](#primeros-pasos)
-6. [Manual de usuario](#manual-de-usuario)
+5. [Manual de usuario](#manual-de-usuario)
+6. [Primeros pasos](#primeros-pasos)
 7. [Licencia](#licencia)
 8. [Contacto y soporte](#contacto-y-soporte)
 
